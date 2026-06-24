@@ -1,7 +1,7 @@
 #include "strong.h"
 #include "std.h"
 void shell() {
-    cmd = "help";
+    char *cmd = "help";
     while (1) {
         
 
