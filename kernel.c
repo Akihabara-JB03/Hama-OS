@@ -1,4 +1,4 @@
-#include "string.h"
+#include "strong.h"
 void kernel_main() {
     char *vga = (char *)0xb8000;
     char *mozi = "HAMA OS [Version 1.0.0]";

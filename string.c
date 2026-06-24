@@ -1,11 +1,11 @@
-int strlen(char *a) {
+int H_strlen(char *a) {
     int bytes = 0;
     while(a[bytes] != '\0') {
         bytes+=1;
     }
     return bytes;
 }
-int strcmp(char *a,char *b) {
+int H_strcmp(char *a,char *b) {
     int i = 0;
     while (a[i] != '\0' && b[i] != '\0') {
         if (a[i] != b[i]) {
@@ -20,7 +20,7 @@ int strcmp(char *a,char *b) {
         return 1;
     }
 }
-char *strcpy(char *src, char *dst) {
+char *H_strcpy(char *src, char *dst) {
     int j = 0;
     while (src[j] != '\0') {
         dst[j] = src[j];
@@ -30,7 +30,7 @@ char *strcpy(char *src, char *dst) {
     return dst;
 }
 
-char *strcat(char *src,char *dst,int n) {
+char *H_strcat(char *src,char *dst,int n) {
     int k = 0;
     int pos = strlen(dst);
     while (src[k] != '\0') {
