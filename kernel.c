@@ -1,6 +1,15 @@
 #include "strong.h"
 #include "std.h"
 void kernel_main() {
-    char *mozi = "HAMA OS [Version 1.0.0]";
-    print(mozi)
+    shell()
+}
+void shell() {
+    cmd = "help";
+    while (1) {
+        
+
+        if(strcmp(cmd, "help") == 0) {
+            print("help:このヘルプを表示する。")
+        }
+    }
 }
