@@ -1,0 +1,46 @@
+int strlen(char *a) {
+    int bytes = 0;
+    while(a[bytes] != '\0') {
+        bytes+=1;
+    }
+    return bytes;
+}
+int strcmp(char *a,char *b) {
+    int i = 0;
+    while (a[i] != '\0' && b[i] != '\0') {
+        if (a[i] != b[i]) {
+            return 1;
+        } else {
+            i++;
+        }
+    }
+    if (a[i] == b[i]) {
+        return 0;
+    } else if (a[i] != b[i]) {
+        return 1;
+    }
+}
+char *strcpy(char *src, char *dst) {
+    int j = 0;
+    while (src[j] != '\0') {
+        dst[j] = src[j];
+        j++;
+    }
+    dst[j] = '\0';
+    return dst;
+}
+
+char *strcat(char *src,char *dst,int n) {
+    int k = 0;
+    int pos = strlen(dst);
+    while (src[k] != '\0') {
+        if ((pos + k) < n) {
+            dst[pos+k] = src[k];
+            k++;
+        } else {
+            break;
+        }
+    }
+    dst[pos+k] = '\0';
+    return dst;
+}
